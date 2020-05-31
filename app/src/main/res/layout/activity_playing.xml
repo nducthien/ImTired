@@ -16,7 +16,8 @@
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/todo" />
 
     <TextView
 
@@ -29,7 +30,6 @@
         android:visibility="invisible" />
 
     <RelativeLayout
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:text="0"
+                    android:text="@string/_0"
                     android:textColor="@android:color/black"
                     android:textSize="36sp" />
 
@@ -65,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:text="1/30"
+                    android:text="@string/_1_30"
                     android:textColor="@android:color/black"
                     android:textSize="36sp" />
 
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="#FF8a80"
-                android:text="Answer A"
+                android:text="@string/answer_a"
                 android:textStyle="bold"
                 android:theme="@style/MyButton" />
 
@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="#FF8a80"
-                android:text="Answer B"
+                android:text="@string/answer_b"
                 android:textStyle="bold"
                 android:theme="@style/MyButton" />
 
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="#FF8a80"
-                android:text="Answer C"
+                android:text="@string/answer_c"
                 android:textStyle="bold"
                 android:theme="@style/MyButton" />
 
@@ -116,13 +116,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="#FF8a80"
-                android:text="Answer D"
+                android:text="@string/answer_d"
                 android:textStyle="bold"
                 android:theme="@style/MyButton" />
-
         </LinearLayout>
-
     </RelativeLayout>
-
-
 </RelativeLayout>

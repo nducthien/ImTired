@@ -3,11 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="250dp">
 
-
     <ImageView
         android:id="@+id/category_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/todo"
         android:scaleType="centerCrop" />
 
     <TextView
@@ -17,7 +17,7 @@
         android:layout_alignParentBottom="true"
         android:background="#3366FF"
         android:gravity="center"
-        android:text="Category Name"
+        android:text="@string/category_name"
         android:textColor="@android:color/white"
         android:textSize="24sp" />
 

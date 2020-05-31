@@ -26,14 +26,14 @@
                 android:id="@+id/tvTotalScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Score : 0"
+                android:text="@string/score_0"
                 android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/tvTotalQues"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Passed : 0/30"
+                android:text="@string/passed_0_30"
                 android:textSize="30sp" />
 
             <ProgressBar
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:background="#3366FF"
-                android:text="Try Again"
+                android:text="@string/try_again"
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:theme="@style/MyButton" />

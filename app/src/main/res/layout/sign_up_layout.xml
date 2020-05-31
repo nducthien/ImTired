@@ -15,7 +15,8 @@
             android:id="@+id/edtNewUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="User Name"
+            android:hint="@string/user_name"
+            android:padding="8dp"
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"
             android:textSize="24sp"
@@ -28,8 +29,9 @@
             android:id="@+id/edtNewPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="PassWord"
+            android:hint="@string/password"
             android:inputType="textPassword"
+            android:padding="8dp"
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"
             android:textSize="24sp"
@@ -42,8 +44,9 @@
             android:id="@+id/edtNewEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
+            android:padding="8dp"
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"
             android:textSize="24sp"
@@ -51,8 +54,5 @@
             app:met_floatingLabel="highlight"
             app:met_primaryColor="@color/colorPrimary"
             app:met_singleLineEllipsis="true" />
-
-
     </LinearLayout>
-
 </android.support.v7.widget.CardView>
