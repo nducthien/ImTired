@@ -19,27 +19,27 @@ import com.squareup.picasso.Picasso;
 
 public class Playing extends AppCompatActivity implements View.OnClickListener {
 
-    final static long INTERVAL = 1000; // 1 SEC
-    final static long TIMEOUT = 7000; // 7 sec
-    int progressValue = 0;
+    public final static long INTERVAL = 1000; // 1 SEC
+    public final static long TIMEOUT = 7000; // 7 sec
+    private int progressValue = 0;
 
     CountDownTimer mCountDown;
 
-    int index = 0;
-    int score = 0;
-    int thisQuestion = 0;
-    int totalQuestion;
-    int correctAnswer;
+    private int index = 0;
+    private int score = 0;
+    private int thisQuestion = 0;
+    private int totalQuestion;
+    private int correctAnswer;
 
     //Firebase
     FirebaseDatabase database;
     DatabaseReference questions;
 
 
-    ProgressBar progressBar;
-    ImageView question_image;
-    Button btnA, btnB, btnC, btnD;
-    TextView tvScore, tvQuestionNum, question_text;
+    private ProgressBar progressBar;
+    private ImageView question_image;
+    private Button btnA, btnB, btnC, btnD;
+    private TextView tvScore, tvQuestionNum, question_text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,10 +74,9 @@ public class Playing extends AppCompatActivity implements View.OnClickListener {
         mCountDown.cancel();
         if (index < totalQuestion) { // still have question in list
             Button clickedButton = (Button) v;
-            if (clickedButton.getText().equals(Common.  questionList.get(index).getCorrectAnswer())) {
-
+            if (clickedButton.getText().equals(Common.questionList.get(index).getCorrectAnswer())) {
                 // choose correct answer
-                score += 10;
+                score+= 10;
                 correctAnswer++;
                 showQuestion(++index); // next question
 
@@ -112,7 +111,7 @@ public class Playing extends AppCompatActivity implements View.OnClickListener {
                         .load(Common.questionList.get(index).getQuestion())
                         .into(question_image);
                 question_image.setVisibility(View.VISIBLE);
-                question_image.setVisibility(View.INVISIBLE);
+                question_text.setVisibility(View.INVISIBLE);
 
             } else {
                 question_text.setText(Common.questionList.get(index).getQuestion());
@@ -167,6 +166,6 @@ public class Playing extends AppCompatActivity implements View.OnClickListener {
             }
         };
 
-        showQuestion(++index);
+        showQuestion(index);
     }
 }

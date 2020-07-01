@@ -40,6 +40,8 @@ public class CategoriFragment extends Fragment {
         return categoriFragment;
     }
 
+    // Press Ctr + 0 create onCreate and onCreateView
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +55,7 @@ public class CategoriFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         myFragment = inflater.inflate(R.layout.fragment_categori, container, false);
 
-        listCategory = myFragment.findViewById(R.id.listCategori);
+        listCategory = myFragment.findViewById(R.id.listCategory);
         listCategory.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(container.getContext());
         listCategory.setLayoutManager(layoutManager);

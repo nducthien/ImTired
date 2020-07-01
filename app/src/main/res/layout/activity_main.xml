@@ -13,8 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/qiuaaa"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        android:src="@drawable/quiz_time" />
 
     <com.rengwuxian.materialedittext.MaterialEditText
         android:id="@+id/edtUser"
@@ -57,8 +57,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:background="#FF0000"
-            android:text="@string/sign_up" />
+            android:background="#FFA500"
+            android:text="@string/sign_up"
+            android:textColor="@android:color/white" />
 
 
         <Button
@@ -67,8 +68,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:background="#FFFF00"
-            android:text="@string/sign_in" />
+            android:background="#3399ff"
+            android:text="@string/sign_in"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
 </LinearLayout>

@@ -22,11 +22,14 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    MaterialEditText edtNewUser, edtNewPass, edtNewEmail; // for sign up
-    MaterialEditText edtUser, edtPass; // for Sign In
+    private MaterialEditText edtNewUser; // for sign up
+    private MaterialEditText edtNewPass;
+    private MaterialEditText edtNewEmail;
+    private MaterialEditText edtUser; // for Sign In
+    private MaterialEditText edtPass;
 
-    Button btn_sign_up;
-    Button btn_sign_in;
+    private Button btn_sign_up;
+    private Button btn_sign_in;
 
     FirebaseDatabase database;
     DatabaseReference users;
@@ -51,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showSignUpDialog();
-
             }
         });
 
@@ -76,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
                             Common.currentUser = login;
                             startActivity(homeActivity);
                             finish();
-
                         } else
                             Toast.makeText(MainActivity.this, "Log in Error !",
                                     Toast.LENGTH_SHORT).show();
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
     private void showSignUpDialog() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
         alertDialog.setTitle("Sign Up");
-        alertDialog.setMessage("Plz fill full information");
+        alertDialog.setMessage("Please fill full information");
 
         LayoutInflater inflater = this.getLayoutInflater();
         View sing_up_layout = inflater.inflate(R.layout.sign_up_layout, null);
@@ -132,12 +133,12 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         if (dataSnapshot.child(user.getUserName()).exists())
-                            Toast.makeText(MainActivity.this, "User alrady exits !",
+                            Toast.makeText(MainActivity.this, "User already exits !",
                                     Toast.LENGTH_SHORT).show();
                         else {
                             users.child(user.getUserName())
                                     .setValue(user);
-                            Toast.makeText(MainActivity.this, "User Registration success!",
+                            Toast.makeText(MainActivity.this, "User registration success!",
                                     Toast.LENGTH_SHORT).show();
                         }
                     }

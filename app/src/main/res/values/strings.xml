@@ -20,5 +20,6 @@
     <string name="try_again">Try Again</string>
     <string name="passed_0_30">Passed : 0/30</string>
     <string name="score_0">Score : 0</string>
+    <string name="text_question">"First Grand Slam of the year"</string>
 
 </resources>
