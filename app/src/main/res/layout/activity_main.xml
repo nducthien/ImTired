@@ -23,9 +23,9 @@
         android:layout_margin="8dp"
         android:hint="@string/user_name"
         android:textColor="@android:color/white"
-        android:textColorHint="@color/colorPrimary"
+        android:textColorHint="@android:color/white"
         android:textSize="16sp"
-        app:met_baseColor="@color/colorPrimary"
+        app:met_baseColor="@android:color/white"
         app:met_floatingLabel="highlight"
         app:met_primaryColor="@color/colorPrimary"
         app:met_singleLineEllipsis="true" />
@@ -38,9 +38,9 @@
         android:hint="@string/password"
         android:inputType="textPassword"
         android:textColor="@android:color/white"
-        android:textColorHint="@color/colorPrimary"
+        android:textColorHint="@android:color/white"
         android:textSize="16sp"
-        app:met_baseColor="@color/colorPrimary"
+        app:met_baseColor="@android:color/white"
         app:met_floatingLabel="highlight"
         app:met_primaryColor="@color/colorPrimary"
         app:met_singleLineEllipsis="true" />
@@ -52,17 +52,6 @@
         android:weightSum="2">
 
         <Button
-            android:id="@+id/btn_sign_up"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            android:background="#FFA500"
-            android:text="@string/sign_up"
-            android:textColor="@android:color/white" />
-
-
-        <Button
             android:id="@+id/btn_sign_in"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -70,6 +59,16 @@
             android:layout_weight="1"
             android:background="#3399ff"
             android:text="@string/sign_in"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#FFA500"
+            android:text="@string/sign_up"
             android:textColor="@android:color/white" />
     </LinearLayout>
 

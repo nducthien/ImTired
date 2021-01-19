@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <item
-        android:id="@+id/action_categori"
+        android:id="@+id/action_category"
         android:enabled="true"
         android:icon="@drawable/ic_question_answer_black_24dp"
-        android:title="Categori"
-        app:showAsAction="ifRoom" />
+        android:title="Category"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
 
     <item
         android:id="@+id/action_ranking"
         android:enabled="true"
         android:icon="@drawable/ic_star_black_24dp"
         android:title="Ranking"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
 
+    <item
+        android:id="@+id/action_play"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_pool_24"
+        android:title="Speed up"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
 
 </menu>

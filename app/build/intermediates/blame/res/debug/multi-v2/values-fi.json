@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\PC\\StudioProjects\\ImTired\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
+            "outputFile": "E:\\Project\\ImTired\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e7f7a71a8bdc994c796eaff661474811\\res\\values-fi\\values-fi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,213,313,414,500,605,723,810,892,972,1079,1182,1279,1385,1484,1588,1751,1850",
-                        "endColumns": "107,99,100,85,104,117,86,81,79,106,102,96,105,98,103,162,98,79",
-                        "endOffsets": "208,308,409,495,600,718,805,887,967,1074,1177,1274,1380,1479,1583,1746,1845,1925"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,213,313,414,500,605,723,810,892,972,1079,1182,1279,1385,1484,1588,1751,2059",
-                        "endColumns": "107,99,100,85,104,117,86,81,79,106,102,96,105,98,103,162,98,79",
-                        "endOffsets": "208,308,409,495,600,718,805,887,967,1074,1177,1274,1380,1479,1583,1746,1845,2134"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\2d7529c7efcf24bf2e79a2d2c4a4d306\\res\\values-fi\\values-fi.xml",
+                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\55d0357afba6fc87be734699f3b08176\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-12.0.1.aar\\8576b5653e993dd3fcac84fc27ada63f\\res\\values-fi\\values.xml",
+                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\f2794f8e5c3f54b3203085a2a6ea78ef\\res\\values-fi\\values-fi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,313,414,500,605,723,810,892,972,1079,1182,1279,1385,1484,1588,1751,1850",
+                        "endColumns": "107,99,100,85,104,117,86,81,79,106,102,96,105,98,103,162,98,79",
+                        "endOffsets": "208,308,409,495,600,718,805,887,967,1074,1177,1274,1380,1479,1583,1746,1845,1925"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,313,414,500,605,723,810,892,972,1079,1182,1279,1385,1484,1588,1751,2059",
+                        "endColumns": "107,99,100,85,104,117,86,81,79,106,102,96,105,98,103,162,98,79",
+                        "endOffsets": "208,308,409,495,600,718,805,887,967,1074,1177,1274,1380,1479,1583,1746,1845,2134"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-12.0.1.aar\\bd89b7a22c8082313c37a60b14a7b7a2\\res\\values-fi\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\PC\\StudioProjects\\ImTired\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
+            "outputFile": "E:\\Project\\ImTired\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-12.0.1.aar\\8576b5653e993dd3fcac84fc27ada63f\\res\\values-mk\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "195",
-                        "endOffsets": "442"
-                    },
-                    "to": {
-                        "startLines": "19",
-                        "startColumns": "4",
-                        "startOffsets": "1877",
-                        "endColumns": "195",
-                        "endOffsets": "2068"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\2d7529c7efcf24bf2e79a2d2c4a4d306\\res\\values-mk\\values-mk.xml",
+                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\55d0357afba6fc87be734699f3b08176\\res\\values-mk\\values-mk.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e7f7a71a8bdc994c796eaff661474811\\res\\values-mk\\values-mk.xml",
+                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\f2794f8e5c3f54b3203085a2a6ea78ef\\res\\values-mk\\values-mk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "105,213,317,425,511,616,735,818,900,987,1093,1200,1301,1408,1519,1623,1779,2073",
                         "endColumns": "107,103,107,85,104,118,82,81,86,105,106,100,106,110,103,155,97,83",
                         "endOffsets": "208,312,420,506,611,730,813,895,982,1088,1195,1296,1403,1514,1618,1774,1872,2152"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-12.0.1.aar\\bd89b7a22c8082313c37a60b14a7b7a2\\res\\values-mk\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "195",
+                        "endOffsets": "442"
+                    },
+                    "to": {
+                        "startLines": "19",
+                        "startColumns": "4",
+                        "startOffsets": "1877",
+                        "endColumns": "195",
+                        "endOffsets": "2068"
                     }
                 }
             ]

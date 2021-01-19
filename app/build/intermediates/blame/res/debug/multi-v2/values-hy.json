@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\PC\\StudioProjects\\ImTired\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hy\\values-hy.xml",
+            "outputFile": "E:\\Project\\ImTired\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hy\\values-hy.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-12.0.1.aar\\8576b5653e993dd3fcac84fc27ada63f\\res\\values-hy\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "209",
-                        "endOffsets": "456"
-                    },
-                    "to": {
-                        "startLines": "19",
-                        "startColumns": "4",
-                        "startOffsets": "1863",
-                        "endColumns": "209",
-                        "endOffsets": "2068"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e7f7a71a8bdc994c796eaff661474811\\res\\values-hy\\values-hy.xml",
+                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\f2794f8e5c3f54b3203085a2a6ea78ef\\res\\values-hy\\values-hy.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\2d7529c7efcf24bf2e79a2d2c4a4d306\\res\\values-hy\\values-hy.xml",
+                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\55d0357afba6fc87be734699f3b08176\\res\\values-hy\\values-hy.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -52,6 +35,23 @@
                         "startOffsets": "2155",
                         "endColumns": "100",
                         "endOffsets": "2251"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-12.0.1.aar\\bd89b7a22c8082313c37a60b14a7b7a2\\res\\values-hy\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "209",
+                        "endOffsets": "456"
+                    },
+                    "to": {
+                        "startLines": "19",
+                        "startColumns": "4",
+                        "startOffsets": "1863",
+                        "endColumns": "209",
+                        "endOffsets": "2068"
                     }
                 }
             ]

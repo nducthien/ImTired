@@ -1,5 +1,6 @@
 package com.example.asd.imtired.Acitvity;
 
+import android.annotation.SuppressLint;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -9,6 +10,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.asd.imtired.Fragment.CategoriFragment;
+import com.example.asd.imtired.Fragment.PlayFragment;
 import com.example.asd.imtired.Fragment.RankingFragment;
 import com.example.asd.imtired.R;
 
@@ -24,21 +26,25 @@ public class Home extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.navigation);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 Fragment selectFragment = null;
                 switch (item.getItemId()) {
-                    case R.id.action_categori:
+                    case R.id.action_category:
                         selectFragment = CategoriFragment.newInstance();
                         break;
                     case R.id.action_ranking:
                         selectFragment = RankingFragment.newInstance();
                         break;
+                    case R.id.action_play:
+                        selectFragment = PlayFragment.newInstance();
+                        break;
                 }
 
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.frame_layout,selectFragment);
+                transaction.replace(R.id.frame_layout, selectFragment);
                 transaction.commit();
                 return true;
 
@@ -50,7 +56,7 @@ public class Home extends AppCompatActivity {
 
     private void setDefaulFragment() {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout,CategoriFragment.newInstance());
+        transaction.replace(R.id.frame_layout, CategoriFragment.newInstance());
         transaction.commit();
     }
 }
