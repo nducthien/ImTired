@@ -28,17 +28,17 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.asd.imtired.Acitvity.MainActivity" >
+        <activity android:name="com.example.asd.imtired.activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.asd.imtired.Acitvity.Home" />
-        <activity android:name="com.example.asd.imtired.Acitvity.Start" />
-        <activity android:name="com.example.asd.imtired.Acitvity.Playing" />
-        <activity android:name="com.example.asd.imtired.Acitvity.Done" />
+        <activity android:name="com.example.asd.imtired.activity.Home" />
+        <activity android:name="com.example.asd.imtired.activity.Start" />
+        <activity android:name="com.example.asd.imtired.activity.Playing" />
+        <activity android:name="com.example.asd.imtired.activity.Done" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

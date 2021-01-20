@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Acitvity.Playing">
+    tools:context=".activity.Playing">
 
     // we need create ImageView and TextView same position
     // because we have 2 type of question : image and text
