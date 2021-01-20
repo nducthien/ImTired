@@ -1,14 +1,14 @@
 package com.example.asd.imtired.model;
 
-public class Categori {
+public class Category {
 
     private String name;
     private String image;
 
-    public Categori() {
+    public Category() {
     }
 
-    public Categori(String name, String image) {
+    public Category(String name, String image) {
         this.name = name;
         this.image = image;
     }

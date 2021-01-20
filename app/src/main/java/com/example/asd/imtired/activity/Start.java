@@ -19,17 +19,15 @@ import java.util.Collections;
 
 public class Start extends AppCompatActivity {
 
-    Button btnPlay;
-
-    FirebaseDatabase database;
-    DatabaseReference questions;
+    private Button btnPlay;
+    private DatabaseReference questions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        database = FirebaseDatabase.getInstance();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
         questions = database.getReference("Question");
 
         loadQuestion(Common.categoryId);
@@ -52,7 +50,7 @@ public class Start extends AppCompatActivity {
         if (Common.questionList.size() > 0)
             Common.questionList.clear();
 
-        questions.orderByChild("CategoryId").equalTo(categoryId)
+        questions.orderByChild("categoryId").equalTo(categoryId)
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {

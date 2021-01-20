@@ -1,5 +1,6 @@
 package com.example.asd.imtired.activity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,6 +24,7 @@ public class Done extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference question_score;
 
+    @SuppressLint("DefaultLocale")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

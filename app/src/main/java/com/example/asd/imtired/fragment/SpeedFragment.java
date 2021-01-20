@@ -9,11 +9,11 @@ import android.view.ViewGroup;
 
 import com.example.asd.imtired.R;
 
-public class PlayFragment extends Fragment {
+public class SpeedFragment extends Fragment {
 
-    public static PlayFragment newInstance() {
-        PlayFragment playFragment = new PlayFragment();
-        return playFragment;
+    public static SpeedFragment newInstance() {
+        SpeedFragment speedFragment = new SpeedFragment();
+        return speedFragment;
     }
 
     @Override
@@ -25,6 +25,6 @@ public class PlayFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_play, container, false);
+        return inflater.inflate(R.layout.fragment_speed, container, false);
     }
 }

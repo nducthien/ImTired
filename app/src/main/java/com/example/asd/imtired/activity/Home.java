@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.asd.imtired.fragment.CategoryFragment;
-import com.example.asd.imtired.fragment.PlayFragment;
+import com.example.asd.imtired.fragment.SpeedFragment;
 import com.example.asd.imtired.fragment.RankingFragment;
 import com.example.asd.imtired.R;
 
@@ -39,7 +39,7 @@ public class Home extends AppCompatActivity {
                         selectFragment = RankingFragment.newInstance();
                         break;
                     case R.id.action_play:
-                        selectFragment = PlayFragment.newInstance();
+                        selectFragment = SpeedFragment.newInstance();
                         break;
                 }
 

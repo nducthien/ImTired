@@ -16,7 +16,7 @@ import com.example.asd.imtired.R;
 import com.example.asd.imtired.activity.Start;
 import com.example.asd.imtired.adapter.CategoryViewHolder;
 import com.example.asd.imtired.common.Common;
-import com.example.asd.imtired.model.Categori;
+import com.example.asd.imtired.model.Category;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -26,7 +26,7 @@ import com.squareup.picasso.Picasso;
 public class CategoryFragment extends Fragment {
 
     private RecyclerView rcvListCategory;
-    private FirebaseRecyclerAdapter<Categori, CategoryViewHolder> adapter;
+    private FirebaseRecyclerAdapter<Category, CategoryViewHolder> adapter;
     private DatabaseReference categories;
 
     public static CategoryFragment newInstance() {
@@ -61,17 +61,17 @@ public class CategoryFragment extends Fragment {
 
     private void loadCategories() {
 
-        adapter = new FirebaseRecyclerAdapter<Categori, CategoryViewHolder>(
-                Categori.class,
+        adapter = new FirebaseRecyclerAdapter<Category, CategoryViewHolder>(
+                Category.class,
                 R.layout.category_layout,
                 CategoryViewHolder.class,
                 categories
         ) {
             @Override
-            protected void populateViewHolder(CategoryViewHolder viewHolder, Categori model, int position) {
-                viewHolder.category_name.setText(model.getName());
+            protected void populateViewHolder(CategoryViewHolder viewHolder, Category category, int position) {
+                viewHolder.category_name.setText(category.getName());
                 Picasso.with(getActivity())
-                        .load(model.getImage())
+                        .load(category.getImage())
                         .into(viewHolder.category_image);
 
                 viewHolder.setItemClickListener(new ItemClickListener() {

@@ -1,5 +1,6 @@
 package com.example.asd.imtired.activity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
@@ -97,6 +98,7 @@ public class Playing extends AppCompatActivity implements View.OnClickListener {
 
     }
 
+    @SuppressLint("DefaultLocale")
     private void showQuestion(int index) {
         if (index < totalQuestion) {
             thisQuestion++;
