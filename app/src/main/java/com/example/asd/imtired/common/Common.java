@@ -12,6 +12,8 @@ public class Common {
 
     // create global variable list of Question
 
+    public static final int REQUEST_CODE_QUIZ = 1;
+
     public static String categoryId;
     public static User currentUser;
     public static List<Question> questionList = new ArrayList<>();

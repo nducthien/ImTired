@@ -17,7 +17,7 @@
         android:contentDescription="@string/todo"
         android:src="@drawable/quiz_time" />
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -36,6 +36,6 @@
             android:textStyle="bold"
             android:theme="@style/MyButton" />
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

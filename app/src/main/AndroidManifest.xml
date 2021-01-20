@@ -6,11 +6,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/quiz"
+        android:icon="@drawable/logo_app"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.StartSpeedActivity"></activity>
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +22,7 @@
         <activity android:name=".activity.Home" />
         <activity android:name=".activity.Start" />
         <activity android:name=".activity.Playing" />
-        <activity android:name=".activity.Done"></activity>
+        <activity android:name=".activity.Done" />
     </application>
 
 </manifest>

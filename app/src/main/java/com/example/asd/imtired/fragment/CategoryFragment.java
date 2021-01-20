@@ -2,11 +2,11 @@ package com.example.asd.imtired.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +25,7 @@ import com.squareup.picasso.Picasso;
 
 public class CategoryFragment extends Fragment {
 
-    private RecyclerView rcvListCategory;
+    private RecyclerView rvListCategory;
     private FirebaseRecyclerAdapter<Category, CategoryViewHolder> adapter;
     private DatabaseReference categories;
 
@@ -49,10 +49,11 @@ public class CategoryFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_categori, container, false);
 
-        rcvListCategory = view.findViewById(R.id.listCategory);
-        rcvListCategory.setHasFixedSize(true);
+        rvListCategory = view.findViewById(R.id.listCategory);
+        rvListCategory.setHasFixedSize(true);
+        assert container != null;
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(container.getContext());
-        rcvListCategory.setLayoutManager(layoutManager);
+        rvListCategory.setLayoutManager(layoutManager);
 
         loadCategories();
 
@@ -70,7 +71,7 @@ public class CategoryFragment extends Fragment {
             @Override
             protected void populateViewHolder(CategoryViewHolder viewHolder, Category category, int position) {
                 viewHolder.category_name.setText(category.getName());
-                Picasso.with(getActivity())
+                Picasso.get()
                         .load(category.getImage())
                         .into(viewHolder.category_image);
 
@@ -87,6 +88,6 @@ public class CategoryFragment extends Fragment {
         };
 
         adapter.notifyDataSetChanged();
-        rcvListCategory.setAdapter(adapter);
+        rvListCategory.setAdapter(adapter);
     }
 }

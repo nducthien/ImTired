@@ -2,7 +2,7 @@ package com.example.asd.imtired.adapter;
 
 // we need create CategoryViewHolder to process each item at Recycler Adapter
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;

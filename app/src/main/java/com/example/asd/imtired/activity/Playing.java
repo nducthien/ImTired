@@ -3,7 +3,7 @@ package com.example.asd.imtired.activity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.CountDownTimer;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -108,7 +108,7 @@ public class Playing extends AppCompatActivity implements View.OnClickListener {
 
             if (Common.questionList.get(index).getIsImageQuestion().equals("true")) {
                 // if is image
-                Picasso.with(getBaseContext())
+                Picasso.get()
                         .load(Common.questionList.get(index).getQuestion())
                         .into(question_image);
                 question_image.setVisibility(View.VISIBLE);

@@ -4,7 +4,7 @@
             "outputFile": "E:\\Project\\ImTired\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\55d0357afba6fc87be734699f3b08176\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-2\\files-2.1\\94e1630a0eb2f0b0029314396db82804\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\f2794f8e5c3f54b3203085a2a6ea78ef\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Thien-PC\\.gradle\\caches\\transforms-2\\files-2.1\\511d189f22d372db34341daaf9b3b1ab\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
